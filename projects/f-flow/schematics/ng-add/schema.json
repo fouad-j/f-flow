@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "foblex-flow-ng-add",
+  "title": "Foblex Flow ng-add schematic",
+  "type": "object",
+  "properties": {
+    "project": {
+      "type": "string",
+      "description": "Name of the project.",
+      "$default": {
+        "$source": "projectName"
+      }
+    },
+    "theme": {
+      "description": "The example to apply",
+      "type": "boolean",
+      "default": true,
+      "x-prompt": "Set up Foblex Flow example and global styles?"
+
+    }
+  },
+  "required": []
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "Adds Foblex Flow to the application with default template",
+      "factory": "./ng-add/index",
+      "schema": "./ng-add/schema.json",
+      "hidden": true
+    },
+    "ng-add-setup-project": {
+      "description": "Sets up the example after the ng-add dependencies have been installed.",
+      "private": true,
+      "factory": "./ng-add/setup-project",
+      "schema": "./ng-add/schema.json",
+      "hidden": true
+    }
+  }
+}
